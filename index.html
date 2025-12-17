@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zeyad Sabouh | Interior Decoration & Fit-Out</title>
-    <meta name="description" content="Zeyad Sabouh – Designco World Interior Decoration L.L.C. Premium interior decoration and fit-out services in Dubai." />
+    <meta name="description" content="Zeyad Sabouh – Designco World Interior Decoration L.L.C. Luxury interior decoration and fit-out services in Dubai, UAE." />
+
+    <!-- SEO & Trust -->
+    <link rel="canonical" href="https://www.zeyadsabouh.online/" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --black: #0c0c0c;
-            --dark-gray: #161616;
-            --mid-gray: #262626;
+            --black: #0b0b0b;
+            --dark-gray: #141414;
+            --mid-gray: #242424;
             --light-gray: #b5b5b5;
             --white: #ffffff;
-            --accent: #e5e5e5;
+            --accent: #d9d9d9;
         }
 
         * {
@@ -26,42 +32,51 @@
         body {
             background-color: var(--black);
             color: var(--white);
-            line-height: 1.7;
+            line-height: 1.75;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
         }
 
         /* ================= HEADER ================= */
         header {
-            background: linear-gradient(180deg, #141414, #0c0c0c);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: linear-gradient(180deg, #141414, #0b0b0b);
             border-bottom: 1px solid var(--mid-gray);
         }
 
         .header-container {
             max-width: 1200px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 28px 20px;
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 22px;
         }
 
         .logo {
-            width: 78px;
-            height: 78px;
+            width: 70px;
+            height: 70px;
             background-color: var(--white);
             mask: url('Zeyadsabouhlogo.png') no-repeat center / contain;
             -webkit-mask: url('Zeyadsabouhlogo.png') no-repeat center / contain;
         }
 
         .brand h1 {
-            font-size: 34px;
+            font-size: 30px;
             font-weight: 600;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.6px;
         }
 
         .brand p {
-            font-size: 13px;
+            font-size: 12px;
             color: var(--light-gray);
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
             margin-top: 4px;
         }
@@ -71,15 +86,13 @@
         }
 
         nav a {
-            color: var(--white);
-            text-decoration: none;
-            margin-left: 32px;
-            font-size: 13px;
-            letter-spacing: 2px;
+            margin-left: 34px;
+            font-size: 12px;
+            letter-spacing: 3px;
             text-transform: uppercase;
             padding-bottom: 6px;
             border-bottom: 1px solid transparent;
-            transition: all 0.2s ease;
+            transition: all 0.25s ease;
         }
 
         nav a:hover {
@@ -91,75 +104,93 @@
         .hero {
             max-width: 1200px;
             margin: auto;
-            padding: 90px 20px 60px;
+            padding: 120px 20px 90px;
+            animation: fadeUp 1.2s ease both;
         }
 
         .hero h2 {
-            font-size: 42px;
+            font-size: 44px;
             font-weight: 500;
-            max-width: 800px;
-            margin-bottom: 20px;
+            max-width: 850px;
+            margin-bottom: 26px;
         }
 
         .hero p {
-            max-width: 650px;
+            max-width: 680px;
             color: var(--light-gray);
-            font-size: 17px;
+            font-size: 18px;
+        }
+
+        .cta {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 15px 34px;
+            border: 1px solid var(--accent);
+            letter-spacing: 3px;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .cta:hover {
+            background: var(--accent);
+            color: var(--black);
         }
 
         /* ================= SECTIONS ================= */
         section {
             max-width: 1200px;
             margin: auto;
-            padding: 80px 20px;
+            padding: 90px 20px;
+            animation: fadeUp 1s ease both;
         }
 
         section h3 {
-            font-size: 28px;
+            font-size: 30px;
             font-weight: 500;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             position: relative;
         }
 
         section h3::after {
             content: "";
             display: block;
-            width: 60px;
+            width: 70px;
             height: 1px;
-            background-color: var(--accent);
-            margin-top: 12px;
+            background: var(--accent);
+            margin-top: 14px;
         }
 
+        /* ================= ABOUT ================= */
         .about p {
-            max-width: 850px;
+            max-width: 880px;
+            font-size: 17px;
             color: var(--light-gray);
-            font-size: 16px;
         }
 
         /* ================= SERVICES ================= */
         .services {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            gap: 34px;
+            margin-top: 50px;
         }
 
         .service-card {
-            background: linear-gradient(180deg, #1a1a1a, #121212);
+            background: linear-gradient(180deg, #191919, #101010);
             border: 1px solid var(--mid-gray);
-            padding: 35px 30px;
-            transition: transform 0.25s ease, border 0.25s ease;
+            padding: 40px 34px;
+            transition: transform 0.35s ease, border 0.35s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-10px);
             border-color: var(--accent);
         }
 
         .service-card h4 {
-            font-size: 18px;
-            margin-bottom: 12px;
+            font-size: 19px;
             font-weight: 500;
+            margin-bottom: 14px;
         }
 
         .service-card p {
@@ -167,13 +198,50 @@
             color: var(--light-gray);
         }
 
+        /* ================= GALLERY ================= */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 22px;
+            margin-top: 50px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 200;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85%;
+        }
+
         /* ================= CONTACT ================= */
         .contact-box {
-            margin-top: 35px;
-            max-width: 720px;
-            background: linear-gradient(180deg, #1a1a1a, #121212);
+            margin-top: 40px;
+            max-width: 760px;
+            background: linear-gradient(180deg, #191919, #101010);
             border: 1px solid var(--mid-gray);
-            padding: 40px;
+            padding: 46px;
         }
 
         .contact-item {
@@ -184,30 +252,31 @@
 
         .contact-item span {
             display: inline-block;
-            width: 110px;
+            width: 120px;
             color: var(--light-gray);
         }
 
         /* ================= FOOTER ================= */
         footer {
             border-top: 1px solid var(--mid-gray);
-            background-color: #0a0a0a;
-            padding: 35px 15px;
+            background: #090909;
+            padding: 40px 15px;
             text-align: center;
-            color: var(--light-gray);
             font-size: 13px;
+            color: var(--light-gray);
             letter-spacing: 1px;
+        }
+
+        /* ================= ANIMATIONS ================= */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* ================= RESPONSIVE ================= */
         @media (max-width: 900px) {
-            nav {
-                display: none;
-            }
-
-            .hero h2 {
-                font-size: 34px;
-            }
+            nav { display: none; }
+            .hero h2 { font-size: 34px; }
         }
     </style>
 </head>
@@ -223,22 +292,24 @@
         <nav>
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#gallery">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
 </header>
 
 <div class="hero">
-    <h2>Premium Interior Decoration & Building Fit-Out Services in Dubai</h2>
+    <h2>Luxury Interior Decoration & Building Fit-Out Services in Dubai</h2>
     <p>
-        Delivering refined interior solutions, superior workmanship, and reliable execution for residential and commercial projects across the UAE.
+        Delivering bespoke interior environments, refined craftsmanship, and premium fit-out solutions for residential and commercial properties across the UAE.
     </p>
+    <a href="#contact" class="cta">REQUEST A CONSULTATION</a>
 </div>
 
 <section id="about" class="about">
     <h3>About the Company</h3>
     <p>
-        Zeyad Sabouh operates under Designco World Interior Decoration L.L.C, providing comprehensive decoration, renovation, and interior fit-out services in Dubai. Our approach is defined by attention to detail, material quality, and adherence to project timelines.
+        Zeyad Sabouh, operating under Designco World Interior Decoration L.L.C, specializes in high-end interior decoration, renovation, and complete fit-out solutions. Our philosophy is centered on precision, material excellence, and disciplined project delivery.
     </p>
 </section>
 
@@ -247,29 +318,51 @@
     <div class="services">
         <div class="service-card">
             <h4>Interior Decoration</h4>
-            <p>Complete decorative solutions combining modern aesthetics with practical design execution.</p>
+            <p>Luxury decorative concepts executed with technical accuracy and timeless design principles.</p>
         </div>
         <div class="service-card">
             <h4>Gypsum & Ceiling Works</h4>
-            <p>Gypsum partitions, suspended ceilings, and customized ceiling designs.</p>
+            <p>Architectural gypsum partitions, custom ceilings, and modern ceiling systems.</p>
         </div>
         <div class="service-card">
             <h4>Painting & Finishing</h4>
-            <p>Professional painting services using premium-grade materials and finishes.</p>
+            <p>High-quality finishes using premium materials for durability and refined aesthetics.</p>
         </div>
         <div class="service-card">
             <h4>Renovation & Fit-Out</h4>
-            <p>End-to-end renovation and fit-out solutions for villas, apartments, offices, and retail spaces.</p>
+            <p>Complete turnkey fit-out solutions for villas, apartments, offices, and retail spaces.</p>
         </div>
     </div>
+</section>
+
+<section id="gallery">
+    <h3>Selected Projects</h3>
+    <div class="gallery-grid">
+        <!-- Replace image filenames with your uploaded project images -->
+        <img src="images/project1.jpg" alt="Interior Project" onclick="openLightbox(this)">
+        <img src="images/project2.jpg" alt="Fit-Out Project" onclick="openLightbox(this)">
+        <img src="images/project3.jpg" alt="Renovation Project" onclick="openLightbox(this)">
+        <img src="images/project4.jpg" alt="Luxury Interior" onclick="openLightbox(this)">
+    </div>
+
+<section id="consultation">
+    <h3>Request a Consultation</h3>
+    <p class="consultation-text">Please provide your contact details and a brief description of your requirements. Our team will contact you promptly.</p>
+    <form class="consultation-form" action="https://formspree.io/f/xnneeyer" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="tel" name="phone" placeholder="Phone / WhatsApp Number" required>
+        <textarea name="message" rows="5" placeholder="Project notes or requirements" required></textarea>
+        <button type="submit">Request</button>
+    </form>
 </section>
 
 <section id="contact">
     <h3>Contact Details</h3>
     <div class="contact-box">
-        <div class="contact-item"><span>Phone</span> +971 566066577</div>
-        <div class="contact-item"><span>WhatsApp</span> +971 566066577</div>
-        <div class="contact-item"><span>Email</span> zeyadsabuh@gmail.com</div>
+        <div class="contact-item"><span>Phone</span> <a href="tel:+971566066577">+971 56 606 6577</a></div>
+        <div class="contact-item"><span>WhatsApp</span> <a href="https://wa.me/971566066577" target="_blank">Chat on WhatsApp</a></div>
+        <div class="contact-item"><span>Email</span> <a href="mailto:zeyadsabuh@gmail.com">zeyadsabuh@gmail.com</a></div>
         <div class="contact-item"><span>Location</span> Dubai, United Arab Emirates</div>
     </div>
 </section>
@@ -277,6 +370,22 @@
 <footer>
     © 2025 Zeyad Sabouh — Designco World Interior Decoration L.L.C. All Rights Reserved.
 </footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="Project Preview">
+</div>
+
+<script>
+    function openLightbox(img) {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
 
 </body>
 </html>
